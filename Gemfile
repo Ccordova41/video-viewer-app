@@ -35,7 +35,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry'
   gem 'rspec-rails', '~> 3.5'
-  gem 'factory_girl_rails'
+  gem 'factory_bot'
   gem 'database_cleaner'
 end
 
