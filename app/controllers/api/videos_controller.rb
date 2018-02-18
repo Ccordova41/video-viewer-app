@@ -1,5 +1,5 @@
 class API::VideosController < ApplicationController
-  before_action :set_vide, only: [:show, :update, :destroy]
+  before_action :set_video, only: [:show, :update, :destroy]
 
   def index
     videos = Video.all
@@ -48,7 +48,7 @@ private
     def render_errors_in_json
       render json: {
         errors: {
-          messages: video.errors.messages
+          messages: @video.errors.messages
         }
       }, status: 422
     end
